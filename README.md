@@ -103,6 +103,29 @@ loginUser 方法用于用户登录，验证用户名、密码和角色，返回�
 UserManager 类管理用户的注册和登录，根据提供的用户名、密码和角色验证用户身份  
 
 
+
+#**验证可见性**  
+创建了example和text两个包，分别放入父类People和子类Teacher,在父类中定义公开的方法和私有的方法
+
+    public String getName(){
+         return name;
+    }
+    protected void liu() {
+        System.out.println("This is a protected method in people.");
+    }
+    void ze() {
+        System.out.println("This is a default method in people.");
+    }
+    private void xu() {
+        System.out.println("This is a private method in people.");
+    }
+
+在Text包子类Teacher中访问父类的私有和公有方法，访问私有方法报错：The method ze() from the type People is not visible，而公有方法没报错。
+
+#**子类与父类** 
+Student和Teacher是People的子类，QuitSubjects，PrintSubjects，RegisterUser，StudentLogin为Java中JFrame的子类，子类中用super使用被子类隐藏的方法super(id, name, sex,age);
+
+
 #**系统运行截图**  
 **1.主页面**  
 ![Image text](https://github.com/banber0/expermint_two/blob/main/%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2.png)  
