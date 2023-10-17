@@ -123,6 +123,7 @@ UserManager 类管理用户的注册和登录，根据提供的用户名、密�
 在Text包子类Teacher中访问父类的私有和公有方法，访问私有方法报错：The method ze() from the type People is not visible，而公有方法没报错。
 
 #**子类与父类** 
+
 Student和Teacher是People的子类,人有id name sex age共性 ，QuitSubjects，PrintSubjects，RegisterUser，StudentLogin为Java中JFrame的子类GUI窗口，子类中用super使用被子类隐藏的方法super(id, name, sex,age);
 
 
