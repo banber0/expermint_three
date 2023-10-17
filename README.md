@@ -113,7 +113,7 @@ UserManager 类管理用户的注册和登录，根据提供的用户名、密�
     protected void liu() {
         System.out.println("This is a protected method in people.");
     }
-    void ze() {
+    private void ze() {
         System.out.println("This is a default method in people.");
     }
     private void xu() {
